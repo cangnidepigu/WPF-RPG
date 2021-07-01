@@ -11,6 +11,7 @@
     <None Remove="Images\Locations\HerbalistsHut.png" />
     <None Remove="Images\Locations\Home.png" />
     <None Remove="Images\Locations\SpiderForest.png" />
+    <None Remove="Images\Locations\Syziph.png" />
     <None Remove="Images\Locations\TownGate.png" />
     <None Remove="Images\Locations\TownSquare.png" />
     <None Remove="Images\Locations\Trader.png" />
@@ -23,6 +24,7 @@
     <Resource Include="Images\Locations\HerbalistsHut.png" />
     <Resource Include="Images\Locations\Home.png" />
     <Resource Include="Images\Locations\SpiderForest.png" />
+    <Resource Include="Images\Locations\Syziph.png" />
     <Resource Include="Images\Locations\TownGate.png" />
     <Resource Include="Images\Locations\TownSquare.png" />
     <Resource Include="Images\Locations\Trader.png" />

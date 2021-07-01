@@ -41,6 +41,10 @@ namespace Engine.Factories
                 "The trees in this forest are covered in sticky white thing.",
                 "pack://application:,,,/Engine;component/Images/Locations/SpiderForest.png");
 
+            newWorld.AddLocation(3, 0, "The Pit",
+                "Kitava-type boss fight",
+                "pack://application:,,,/Engine;component/Images/Locations/Syziph.png");
+
             newWorld.AddLocation(0, 1, "Herbalist's hut",
                 "You see a small hut, with funni smoke coming out of the chimney.",
                 "pack://application:,,,/Engine;component/Images/Locations/HerbalistsHut.png");
