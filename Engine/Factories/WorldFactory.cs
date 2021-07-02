@@ -53,6 +53,8 @@ namespace Engine.Factories
                 "You see a small hut, with funni smoke coming out of the chimney.",
                 "pack://application:,,,/Engine;component/Images/Locations/HerbalistsHut.png");
 
+            newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
+
             newWorld.AddLocation(0, 2, "Herbalist's garden",
                 "There are many plants here, snek might come an' bite ya'.",
                 "pack://application:,,,/Engine;component/Images/Locations/HerbalistsGarden.png");
