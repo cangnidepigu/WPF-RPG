@@ -17,6 +17,8 @@ namespace Engine.Factories
                 "Big corns with BIG RATS, WATCH OUT",
                 "pack://application:,,,/Engine;component/Images/Locations/FarmFields.png");
 
+            newWorld.LocationAt(-2, -1).AddMonster(2, 100);
+
             newWorld.AddLocation(-1, -1, "Farmer's House",
                 "This is the house of your mate Deez.",
                 "pack://application:,,,/Engine;component/Images/Locations/Farmhouse.png");
@@ -41,6 +43,8 @@ namespace Engine.Factories
                 "The trees in this forest are covered in sticky white thing.",
                 "pack://application:,,,/Engine;component/Images/Locations/SpiderForest.png");
 
+            newWorld.LocationAt(2, 0).AddMonster(3, 100);
+
             newWorld.AddLocation(3, 0, "The Pit",
                 "Kitava-type boss fight",
                 "pack://application:,,,/Engine;component/Images/Locations/Syziph.png");
@@ -53,6 +57,7 @@ namespace Engine.Factories
                 "There are many plants here, snek might come an' bite ya'.",
                 "pack://application:,,,/Engine;component/Images/Locations/HerbalistsGarden.png");
 
+            newWorld.LocationAt(0, 2).AddMonster(1, 100);
 
 
             return newWorld;
