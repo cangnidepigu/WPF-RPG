@@ -17,8 +17,8 @@ namespace Engine.Factories
                     Monster snake =
                         new Monster("Snake", "Snake.png", 4, 4, 1, 2, 5, 1);
 
-                    AddLootItem(snake, 9001, 25);
-                    AddLootItem(snake, 9002, 75);
+                    AddLootItem(snake, 9001, 75);
+                    AddLootItem(snake, 9002, 25);
 
                     return snake;
 
