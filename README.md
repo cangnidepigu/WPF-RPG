@@ -1,4 +1,4 @@
-# WPF-RPG
+# 🗺WPF-RPG
 
 WPF/XAML game
 
