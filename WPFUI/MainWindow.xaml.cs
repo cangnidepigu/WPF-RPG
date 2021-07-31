@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Engine.EventArgs;
 using Engine.ViewModels;
+using Engine.Models;
 
 namespace WPFUI
 {
@@ -55,6 +56,11 @@ namespace WPFUI
         private void OnClick_AttackMonster(object sender, RoutedEventArgs e)
         {
             _gameSession.AttackCurrentMonster();
+        }
+
+        public void OnClick_UseCurrentConsumable(object sender, RoutedEventArgs e)
+        {
+            _gameSession.UseCurrentConsumable();
         }
 
         private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
