@@ -126,14 +126,15 @@ namespace Engine.ViewModels
 
         public GameSession()
         {
-            CurrentPlayer = new Player("Joe", "Mage", 0, 10, 10, 119);
+            CurrentPlayer = new Player("Joe", "Game Master", 0, 10, 10, 119);
 
             if (!CurrentPlayer.Weapons.Any())
             {
-                CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(1001));
+                CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(1003));
             }
 
             CurrentPlayer.AddItemToInventory(ItemFactory.CreateGameItem(2001));
+            CurrentPlayer.LearnRecipe(RecipeFactory.RecipeByID(1));
 
             CurrentWorld = WorldFactory.CreateWorld();
 
