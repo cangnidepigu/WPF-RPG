@@ -30,7 +30,6 @@ namespace Engine.Factories
             AddTraderToList(farmerTed);
             AddTraderToList(peteTheHerbalist);
 
-
         }
 
         public static Trader GetTraderByName(string name)
