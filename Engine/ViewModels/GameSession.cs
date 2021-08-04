@@ -255,6 +255,11 @@ namespace Engine.ViewModels
 
         public void AttackCurrentMonster()
         {
+            if (CurrentMonster == null)
+            {
+                return;
+            }
+
             if (CurrentPlayer.CurrentWeapon == null)
             {
                 RaiseMessage("You must have a weapon to attack.");
