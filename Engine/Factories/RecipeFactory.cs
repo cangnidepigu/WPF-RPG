@@ -20,6 +20,14 @@ namespace Engine.Factories
             granolaBar.AddOutputItem(2001, 1);
 
             _recipes.Add(granolaBar);
+
+            Recipe monsterEnergyDrink = new Recipe(2, "Monster Energy Drink");
+            monsterEnergyDrink.AddIngredient(3005, 2);
+            monsterEnergyDrink.AddIngredient(3004, 1);
+            monsterEnergyDrink.AddIngredient(3002, 1);
+            monsterEnergyDrink.AddOutputItem(2002, 1);
+
+            _recipes.Add(monsterEnergyDrink);
         }
 
         public static Recipe RecipeByID(int id)

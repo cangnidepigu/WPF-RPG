@@ -23,10 +23,13 @@ namespace Engine.Factories
             BuildWeapon(1503, "Spider fangs", 0, 0, 4);
 
             BuildHealingItem(2001, "Granola bar", 5, 2);
+            BuildHealingItem(2002, "Monster Energy Drink", 10, 10);
 
             BuildMiscellaneousItem(3001, "Oats", 1);
             BuildMiscellaneousItem(3002, "Honey", 2);
             BuildMiscellaneousItem(3003, "Raisins", 2);
+            BuildMiscellaneousItem(3004, "Caffeine", 5);
+            BuildMiscellaneousItem(3005, "Water", 1);
 
             BuildMiscellaneousItem(9001, "Snake Blood", 3);
             BuildMiscellaneousItem(9002, "Snakeskin", 2);
