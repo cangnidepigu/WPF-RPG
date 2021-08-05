@@ -12,7 +12,7 @@ namespace Engine.Factories
 {
     public static class ItemFactory
     {
-        private const string GAME_DATA_FILENAME = "C:\\Users\\nokak\\source\\repos\\SOSCSRPG\\Engine\\GameData\\GameItems.xml";
+        private const string GAME_DATA_FILENAME = ".\\GameData\\GameItems.xml";
 
         private static readonly List<GameItem> _standardGameItems = _standardGameItems = new List<GameItem>();
 
