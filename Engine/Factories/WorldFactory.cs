@@ -56,8 +56,6 @@ namespace Engine.Factories
                 AddMonsters(location, node.SelectNodes("./Monsters/Monster"));
                 AddQuests(location, node.SelectNodes("./Quests/Quest"));
                 AddTrader(location, node.SelectSingleNode("./Trader"));
-
-                world.AddLocation(location);
             }
         }
 
