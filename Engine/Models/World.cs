@@ -8,18 +8,16 @@ namespace Engine.Models
 {
     public class World
     {
-        private List<Location> _location = new List<Location>();
+        private readonly List<Location> _locations = new List<Location>();
 
-        internal void AddLocation(int xCoordinate, int yCoordinate, string name,
-            string description, string imageName)
+        internal void AddLocation(Location location)
         {
-            _location.Add(new Location(xCoordinate, yCoordinate, name, description,
-                $"pack://application:,,,/Engine;component/Images/Locations/{imageName}"));
+            _locations.Add(location);
         }
 
         public Location LocationAt(int xCoordinate, int yCoordinate)
         {
-            foreach (Location loc in _location)
+            foreach (Location loc in _locations)
             {
                 if(loc.XCoordinate == xCoordinate && loc.YCoordinate == yCoordinate)
                 {
