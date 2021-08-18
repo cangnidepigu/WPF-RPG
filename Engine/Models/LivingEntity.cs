@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Engine.Services;
 
 namespace Engine.Models
@@ -123,7 +119,8 @@ namespace Engine.Models
             }
         }
 
-        public bool IsDead => CurrentHitPoints <= 0;
+        public bool IsAlive => CurrentHitPoints > 0;
+        public bool IsDead => !IsAlive;
 
         #endregion
 
