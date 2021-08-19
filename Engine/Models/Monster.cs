@@ -1,9 +1,5 @@
 ﻿using Engine.Factories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Engine.Models
 {
@@ -17,9 +13,9 @@ namespace Engine.Models
         public int RewardExperiencePoints { get; }
 
         public Monster(int id, string name, string imageName,
-            int maximuHitPoints, GameItem currentWeapon,
+            int maximuHitPoints, int dexterity, GameItem currentWeapon,
             int rewardExperiencePoints, int gold) :
-            base(name, maximuHitPoints, maximuHitPoints, gold)
+            base(name, maximuHitPoints, maximuHitPoints, dexterity, gold)
         {
             ID = id;
             ImageName = imageName;
@@ -40,7 +36,7 @@ namespace Engine.Models
         {
             // "Clone" this monster to a new Monster object
             Monster newMonster =
-                new Monster(ID, Name, ImageName, MaximumHitPoints, CurrentWeapon, RewardExperiencePoints, Gold);
+                new Monster(ID, Name, ImageName, MaximumHitPoints, Dexterity, CurrentWeapon, RewardExperiencePoints, Gold);
 
             foreach (ItemPercentage itemPercentage in _lootTable)
             {

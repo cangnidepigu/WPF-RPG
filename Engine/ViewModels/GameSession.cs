@@ -119,7 +119,9 @@ namespace Engine.ViewModels
 
         public GameSession()
         {
-            CurrentPlayer = new Player("Joe", "Game Master", 0, 10, 10, 119);
+            int dexterity = RandomNumberGenerator.NumberBetween(3, 18);
+
+            CurrentPlayer = new Player("Joe", "Game Master", 0, 10, 10, dexterity, 119);
 
             if (!CurrentPlayer.Inventory.Weapons.Any())
             {
