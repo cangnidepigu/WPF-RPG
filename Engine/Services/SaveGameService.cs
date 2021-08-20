@@ -10,16 +10,14 @@ namespace Engine.Services
 {
     public static class SaveGameService
     {
-        private const string SAVE_GAME_FILENAME = "SOSCROG.json";
-
-        public static void Save(GameSession gameSession)
+        public static void Save(GameSession gameSession, string fileName)
         {
-            File.WriteAllText(SAVE_GAME_FILENAME, JsonConvert.SerializeObject(gameSession, Formatting.Indented));
+            File.WriteAllText(fileName, JsonConvert.SerializeObject(gameSession, Formatting.Indented));
         }
 
-        public static GameSession LoadLastSaveOrCreateNew()
+        public static GameSession LoadLastSaveOrCreateNew(string fileName)
         {
-            if (!File.Exists(SAVE_GAME_FILENAME))
+            if (!File.Exists(fileName))
             {
                 return new GameSession();
             }
@@ -27,7 +25,7 @@ namespace Engine.Services
             // Save game file exists, so create the GameSession object from it
             try
             {
-                JObject data = JObject.Parse(File.ReadAllText(SAVE_GAME_FILENAME));
+                JObject data = JObject.Parse(File.ReadAllText(fileName));
 
                 // Populate Player object
                 Player player = CreatePlayer(data);
@@ -45,6 +43,7 @@ namespace Engine.Services
                 return new GameSession();
             }
         }
+
         private static Player CreatePlayer(JObject data)
         {
             string fileVersion = FileVersion(data);
