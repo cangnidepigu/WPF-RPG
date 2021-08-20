@@ -9,17 +9,19 @@ namespace Engine.ViewModels
     {
         private readonly MessageBroker _messageBroker = MessageBroker.GetInstance();
 
-        private Battle _currentBattle;
-
         #region Properties
 
-        private Location _currentLocation;
         private Player _currentPlayer;
+        private Location _currentLocation;
+        private Battle _currentBattle;
         private Monster _currentMonster;
         private Trader _currentTrader;
 
+        public string Version { get; } = "0.1.000";
+
         public World CurrentWorld { get; }
-        public  Player CurrentPlayer
+
+        public Player CurrentPlayer
         {
             get { return _currentPlayer; }
             set
@@ -138,6 +140,13 @@ namespace Engine.ViewModels
             CurrentWorld = WorldFactory.CreateWorld();
 
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
+        }
+
+        public GameSession(Player player, int xCoordinate, int yCoordinate)
+        {
+            CurrentWorld = WorldFactory.CreateWorld();
+            CurrentPlayer = player;
+            CurrentLocation = CurrentWorld.LocationAt(xCoordinate, yCoordinate);
         }
 
         public void MoveNorth()
