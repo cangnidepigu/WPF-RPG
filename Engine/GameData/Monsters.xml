@@ -21,4 +21,11 @@
 			<LootItem ID="9006" Percentage="75"/>
 		</LootItems>
 	</Monster>
+	<Monster ID="99" Name="Sisiphus" MaximumHitPoints="100" WeaponID="1503" RewardXP="100" Gold="999" ImageName="Syziph.png">
+		<Dexterity>99</Dexterity>
+		<LootItems>
+			<LootItem ID="9005" Percentage="25"/>
+			<LootItem ID="9006" Percentage="75"/>
+		</LootItems>
+	</Monster>
 </Monsters>

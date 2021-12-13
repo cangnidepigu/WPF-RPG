@@ -48,6 +48,9 @@
     <None Update="Images\Locations\Syziph.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Images\Monsters\Syziph.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Images\Locations\TownGate.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

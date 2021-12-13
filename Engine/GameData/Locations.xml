@@ -31,6 +31,9 @@
 	</Location>
 	<Location X="3" Y="0" Name="The Pit" ImageName="Syziph.png">
 		<Description><![CDATA[Kitava-type boss fight.]]></Description>
+		<Monsters>
+			<Monster ID="99" Percent="100"/>
+		</Monsters>
 	</Location>
 	<Location X="0" Y="1" Name="Herbalist's Hut" ImageName="HerbalistsHut.png">
 		<Description><![CDATA[You see a small hut, with plants drying from the roof.]]></Description>
